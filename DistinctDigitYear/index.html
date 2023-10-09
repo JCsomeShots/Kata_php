@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distinct Digital Year</title>
+</head>
+<body>
+    <h1>Distinct Digital Year</h1>
+    <form action="procesar.php" method="POST">
+        <label for="new-year-input">Insert a Yera and I will find the minimum year number which is strictly larger than the given one and has only distinct digits. (some rules less than 9000 and greater than 1000 )</label><br>
+        <input type="number" name="new-year-input" id="new-year-input">
+        <button type="submit">Send</button>
+    </form>
+
+    <div class="result">
+        <?php include 'procesar.php'; ?>
+    </div>
+</body>
+</html>
